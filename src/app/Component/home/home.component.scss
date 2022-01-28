@@ -1,0 +1,117 @@
+
+
+.container-fluid {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin:25px;
+    width:100%;
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      position: relative;
+      z-index: 100;
+      .image {
+        height: 140px;
+        width: 150px;
+        padding: 3px;
+        // background: #7d2ae8;
+        .img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 3px solid #fff;
+        }
+      }
+      .media-icons{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i{
+          margin-top: 10px;
+          color: #fff;
+          opacity: 0.6;
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+        i:hover{
+          opacity: 1;
+        }
+      }
+      .name-profession{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        color: #333;
+        .name{
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .profession{
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+      .rating{
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+        i{
+          font-size: 18px;
+          margin: 0 2px;
+          color: #7d2ae8;
+        }
+      }
+      .button{
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        button{
+          background: #7d2ae8;
+          outline: none;
+          border: none;
+          color: #fff;
+          padding: 15px 20px;
+          border-radius: 20px;
+          font-size: 14px;
+          transition: all 0.3s ease;
+          cursor: pointer;
+        }
+        button:hover{
+          background: #6616d0;
+        }
+      }
+    }
+  }
+  .swiper{
+    width: 100%;
+  }
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #7d2ae8;
+  border-radius: 20px 20px 0 0;
+}

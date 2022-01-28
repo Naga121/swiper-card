@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "fName": "Nagaraju",
+      "lName": "Thota",
+      "phone": "9705081432",
+      "email": "naga@gmail.com",
+      "password": "naga@123",
+      "id": 1
+    },
+    {
+      "email": "naga@gmail.com",
+      "password": "naga@123",
+      "id": 2
+    },
+    {
+      "email": "naga@gmail.com",
+      "password": "naga@123",
+      "id": 3
+    }
+  ]
+}

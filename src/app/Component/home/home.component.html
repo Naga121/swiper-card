@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <section>
+    <div class="swiper mySwiper  container">
+      <div class="row">
+        <div class="col-md-3" *ngFor=" let img of images">
+          <div class=" swiper-wrapper content">
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src={{img.img}} alt="" class="img">
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="name-profession">
+                  <span class="name">{{img.name}}</span>
+                  <span class="profession">{{img.role}}</span>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="button">
+                  <button class="btn aboutMe">About Me</button>
+                  <button class="btn readMe">Read Me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+</div>
